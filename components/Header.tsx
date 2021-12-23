@@ -9,7 +9,7 @@ import Vk from "../public/img/vk.png";
 
 import Mail from "../public/img/arroba.png";
 export const Header: React.FC = () => {
-  const [uznatWidth, setUznatWidth] = useState(true);
+
   const { theme, setTheme } = useTheme();
   const [toggle, setToggle] = useState(false);
   React.useEffect(() => {
@@ -23,15 +23,7 @@ export const Header: React.FC = () => {
     }
   }
 
-  React.useEffect(() => {
-    var width = screen.availWidth;
 
-    if (width <= 354) {
-      setUznatWidth(true);
-    } else {
-      setUznatWidth(false);
-    }
-  }, []);
 
   return (
     <div className="content ">
